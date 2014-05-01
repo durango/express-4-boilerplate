@@ -1,0 +1,24 @@
+{
+  "name": "office",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Durante <me@danieldurante.com> (http://danieldurante.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.1.1",
+    "body-parser": "^1.0.2",
+    "csurf": "^1.1.0",
+    "compression": "^1.0.2",
+    "cookie-session": "^1.0.1",
+    "method-override": "^1.0.0",
+    "cookie-parser": "^1.0.1",
+    "express-session": "^1.0.4",
+    "sequelize": "^1.7.3",
+    "pg": "^3.0.3",
+    "passport-google-oauth": "^0.1.5"
+  }
+}
