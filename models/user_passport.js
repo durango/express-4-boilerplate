@@ -1,7 +1,7 @@
 module.exports = function(sequelize, DataType) {
   var UserPassport = sequelize.define('UserPassport', {
     method: DataType.STRING,
-    token: DataType.STRING,
+    token:  DataType.STRING,
     secret: DataType.STRING
   }, {
     classMethods: {

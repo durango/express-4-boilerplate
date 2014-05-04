@@ -2,7 +2,7 @@
   "db": {
     "username": "",
     "password": "",
-    "databse": "",
+    "database": "",
     "dialect": "postgres",
     "host": "127.0.0.1",
     "port": 5432
@@ -16,5 +16,13 @@
         "secure": false
       }
     }
+  },
+  "google": {
+    "id": "",
+    "secret": "",
+    "email": "",
+    "redirect": "",
+    "origin": "",
+    "callbackUrl": ""
   }
 }

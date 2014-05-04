@@ -5,7 +5,7 @@ var models = require('./models');
 app = require('./controllers')(app);
 
 function loadModels(fn) {
-  models.sequelize.sync({force: true}).complete(fn);
+  models.sequelize.sync().complete(fn);
 }
 
 function startServer(err) {
