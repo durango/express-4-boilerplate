@@ -1,5 +1,5 @@
 {
-  "name": "office",
+  "name": "",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -17,8 +17,10 @@
     "method-override": "^1.0.0",
     "cookie-parser": "^1.0.1",
     "express-session": "^1.0.4",
-    "sequelize": "^1.7.3",
+    "sequelize": "^2.0.0-dev11",
     "pg": "^3.0.3",
-    "passport-google-oauth": "^0.1.5"
+    "passport-google-oauth": "^0.1.5",
+    "helmet": "^0.2.1",
+    "passport": "^0.2.0"
   }
 }

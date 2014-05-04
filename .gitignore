@@ -1,6 +1,65 @@
+#
+# Common NodeJS files
+#
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+node_modules
+npm-debug.log
+
+# Custom env
+
+.env
+
+# Monitoring/Services
+
+.monitor
+
+# Common
+
+*.diff
+*.err
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# Subversions
+
+.hg
+.svn
+.CVS
+
+# OSX & Win
+
 .DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+.fuse_hidden*
+
+# Sublime
+
+*.sublime-project
+*.sublime-workspace
+
+# Project Specific
 
 config.json
-node_modules
 public/assets/*
 !public/assets/.gitkeep

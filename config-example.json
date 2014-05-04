@@ -6,5 +6,15 @@
     "dialect": "postgres",
     "host": "127.0.0.1",
     "port": 5432
+  },
+  "express": {
+    "sessions": {
+      "key": "sid",
+      "secret": "changeme",
+      "cookie": {
+        "httpOnly": true,
+        "secure": false
+      }
+    }
   }
 }
