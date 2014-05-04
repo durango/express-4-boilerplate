@@ -15,9 +15,9 @@ This is a small boilerplate for:
 
 3. Edit and rename config-example.json to config.json
 
-4. Create the tables (or add `{force: true}` and run the application once and then remove it)
+4. Create the tables manually, dump/execute `models/structure.sql`, or add `{force: true}` within `index.js` of `sequelize.sync()` and run the application once (remember to remove it).
 
-5. Create a oAuth client ID for Google through their [console](https://console.developers.google.com). The recommended callback URL is `schema://your-domain.tld/api/auth/google/callback`
+5. Create an oAuth client ID for Google through their [console](https://console.developers.google.com). The recommended callback URL is `schema://your-domain.tld/api/auth/google/callback`
 
 6. `node index.js`
 
@@ -25,7 +25,7 @@ This is a small boilerplate for:
 
 ### Controllers
 
-Controllers can do whatever they want for the most part with the exception of what it `exports`. The export has two formats:
+Controllers can do whatever they want except of what it `exports`. The export has two formats:
 
 **Array:**
 
@@ -39,7 +39,7 @@ module.exports = ['/mountpath', Router];
 module.exports = {path: '/mountpath', controller: Router};
 ```
 
-You just need to tell the boilerplate which path you want to mount and return an express.Router() instance.
+You just need to tell the boilerplate which `path` you want to mount and return an `express.Router()` instance.
 
 In order to retrieve all of your models, simply type in:
 
@@ -63,7 +63,7 @@ This is where all of your server's configuration is stored along with any middle
 
 ### routing
 
-Routing gets mounted on top of `/api` as the URL. The reason behind this is that NodeJS should handle server-side logic while something else should handle the client-side templating and scripts (it's up to you really depending on your project). I would recommend making some sort of build system for creating your templates.
+Routing gets mounted on top of `/api` as the URL. The reason behind this is that NodeJS should handle server-side logic while something else should handle the client-side templating and scripts (it's up to you really depending on your project). I would recommend making some sort of build system for creating your templates and letting the browser take care of the client-side stuff.
 
 # License
 
