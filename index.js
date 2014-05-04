@@ -17,9 +17,24 @@ function startServer(err) {
 
   server.use(express.static('./public'));
   server.use('/api', app);
-  server.listen(port);
+  server.use(errorHandler);
+  server.use(notFoundHandler);
 
-  console.log('Server has started on port ' + port + '.');
+  if (!module.parent) {
+    server.listen(port);
+    console.log('Server has started on port ' + port + '.');
+  }
+}
+
+function errorHandler(err, req, res, next) {
+  if (~err.message.indexOf('not found')) return next();
+  console.error(err.stack);
+
+  res.status(500).send('An error has occurred.');
+}
+
+function notFoundHandler(req, res, next) {
+  res.status(404).send('Not found');
 }
 
 loadModels(startServer);

@@ -3,7 +3,7 @@ var controller = express.Router();
 
 controller.route('/')
 .get(function (req, res) {
-  res.json(req.user);
+  res.send('Hello World');
 });
 
 module.exports = ['/', controller];
