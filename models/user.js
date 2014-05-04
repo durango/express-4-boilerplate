@@ -14,8 +14,8 @@ module.exports = function(sequelize, DataType) {
         return [this.first_name, this.last_name].join(' ');
       }
     },
-    tableName: 'users',
-    underscore: true
+    tableName:   'users',
+    underscored: true
   });
 
   return User;

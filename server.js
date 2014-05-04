@@ -1,3 +1,4 @@
+var path            = require('path');
 var express         = require('express');
 var bodyParser      = require('body-parser');
 var methodOverride  = require('method-override');
@@ -24,6 +25,6 @@ app.use(csrf());
 app.use(compress());
 app.use(passport.initialize());
 app.use(passport.session());
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 module.exports = app
